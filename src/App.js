@@ -4,6 +4,7 @@ import About from './Pages/About';
 import Home from './Pages/Home/Home';
 import Navbar from './Pages/Shared/Navbar';
 import Login from './Pages/Login';
+import NotFound from './Pages/NotFound';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="about" element={<About/>}/>
       <Route path="login" element={<Login/>}/>
+      <Route path="*" element={<NotFound/>}/>
+
     </Routes>
     </div>
   );
